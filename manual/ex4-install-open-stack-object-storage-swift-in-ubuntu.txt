@@ -1,0 +1,38 @@
+AIM
+To Install open stack object storage - swift in ubuntu.
+
+PROCEDURAL STEPS
+
+Step 1: 
+sudo apt update
+sudo apt upgrade
+
+Step 2: sudo apt install swift swift-proxy swift-object swift-account swift-container
+
+Step 3: Open the /etc/swift/swift.c in a text editor and modify the following values:
+[swift-hash]
+swift_hash_path_suffix RANDOM_HASH
+Replace RANDOM_HASH with a randomly generated hash value.
+
+Step 4: 
+sudo mkdir /var/cache/swift
+sudo mkdir /var/run/swift
+sudo chown -R swift:swift /var/cache/swift /var/run/swift
+
+Step 5: 
+sudo systemctl start swift-account
+sudo systemctl start swift-container
+sudo systemctl start swift-object
+sudo systemctl start swift-proxy
+
+Step 6:
+sudo systemctl enable swift-account
+sudo systemctl enable swift-container
+sudo systemctl enable swift-object
+sudo systemctl enable swift-proxy
+
+Step 7: 
+sudo systemctl status swift-account
+sudo systemctl status swift-container
+sudo systemctl status swift-object
+sudo systemetl status swift-proxy
