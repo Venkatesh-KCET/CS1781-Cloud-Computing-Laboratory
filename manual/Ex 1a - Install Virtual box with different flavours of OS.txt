@@ -1,0 +1,27 @@
+AIM:
+TO install Guest OS on Vitual Machine using Oracle VirtualBox.
+
+Procedural Steps:
+1. Download and Install Oracle VirtualBox latest Version and Externsion Package.
+2. Download Ubuntu OVA (Open Vitual Appliance) From osboxes
+3. The files are downloaded in Local Machine -> Click the Oracle VM VirtualBox & Setup Wizard Move to run time environment.
+4. Custom Setup 
+4.1. Check VirtualBox Application
+4.2. Select Features to be installed
+5. Warning Network Interfaces -> Click 'Yes' & Procees to install
+6. Ready to install -> click install
+7. Oracle VM VirtualBox installing
+8. To install drive software -> click install
+9. Oracle VM VirtualBox installation is complete -> click 'Finish'
+10. Import the Oracle VM Virtual Externsion Pack into Oracle VirtualBox
+11. CLick 'Install' Oracle VM Virtual Externsion Pack
+12. VirtualBox License -> click 'I Agree'
+13. Externsion Pack Installation Successful -> click 'ok'
+14. To install Virtual Machine: File -> Import Appliance
+15. Select Ubuntu OVA from directory
+16. Application Settings -> Choose 'RAM' Size -> Click 'Import'
+17. Importing the Virtual Disk Image
+18. Guest OS 'Ubuntu' is installed successfully and click 'start' button to launch the virtual machine.
+19. Login to Ubuntu
+username: hadoop
+password: Test1234
