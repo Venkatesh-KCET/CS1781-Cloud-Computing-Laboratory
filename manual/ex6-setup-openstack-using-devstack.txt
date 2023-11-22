@@ -1,0 +1,23 @@
+AIM
+To Setup Openstack Using DevStack
+
+PROCEDURAL STEPS:
+Step 1: Set up a compatible operating system: DevStack officially supports Ubuntu, so start by installing Ubuntu Server on your machine. Make sure you have a clean installation without any conflicting services or configurations.
+
+Step 2: 
+sudo apt update
+sudo apt upgrade
+
+Step 3: sudo apt install git
+
+Step 4:git clone https://github.com/openstack-dev/devstack.git
+
+Step 5: 
+cd devstack
+cp samples/local.conf .
+
+Step 6: Modify local.conf: Open the local.conf file in a text editor and make the necessary changes based on your requirements. For example, you may need to adjust the IP address, password, and service settings. Save the file when you're done.
+
+Step 7: ./stack.sh
+
+Step 8: Wait for the installation to complete. The installation process may take a while depending on your system's resources and internet speed. DevStack will automatically download and install all the required components for OpenStack.
