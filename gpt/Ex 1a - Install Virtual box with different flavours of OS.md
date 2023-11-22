@@ -3,10 +3,6 @@
 **Objective:**
 This guide outlines the step-by-step process of installing a Guest OS (Ubuntu in this case) on Oracle VirtualBox.
 
-**Prerequisites:**
-- Ensure that you have downloaded and installed the latest version of Oracle VirtualBox along with the Extension Package.
-- Download the Ubuntu OVA (Open Virtual Appliance) from osboxes.org.
-
 **Procedure:**
 
 1. **Install Oracle VirtualBox:**
