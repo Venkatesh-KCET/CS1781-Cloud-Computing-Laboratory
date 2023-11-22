@@ -1,0 +1,39 @@
+AIM
+To setup a private cloud using open stack or eucalyptus.
+
+PROCEDURAL STEPS
+Step 1: Hardware and Network Requirements
+Ensure that you have the necessary hardware resources and network infrastructure to support your private cloud deployment. This typically includes servers, storage devices, network switches, and sufficient network bandwidth.
+
+Step 2: Install a Base Operating System
+Choose a Linux distribution (e.g., Ubuntu, CentOS) and install it on the servers that will be part of your OpenStack deployment. Follow the installation instructions provided by the distribution.
+
+Step 3: Configure Network Settings
+Ensure that each server has a unique hostname and a static IP address. Set up DNS resolution so that each server can resolve the others' hostnames.
+
+Step 4: Install OpenStack Packages
+Update your system packages and install the necessary OpenStack packages. The exact packages and their installation process may vary depending on the Linux distribution you're using Refer to the OpenStack documentation for the specific packages and installation instructions.
+
+Step 5: Configure the Identity Service (Keystone)
+Configure the Identity service (Keystone) to authenticate and manage users, projects, and roles within your OpenStack cloud. This involves setting up a database, configuring the Keystone service, and creating initial users and projects.
+
+Step 6: Configure the Image Service (Glance)
+Configure the Image service (Glance) to store and manage virtual machine images. This involves setting up a storage backend, configuring Glance services, and adding initial images to the image catalog.
+
+Step 7: Configure the Compute Service (Nova)
+Configure the Compute service (Nova) to manage and orchestrate virtual machines. This includes setting up hypervisor drivers, configuring Nova services, and defining flavors, which specify the compute resources available to instances.
+
+Step 8: Configure the Networking Service (Neutron)
+Configure the Networking service (Neutron) to provide network connectivity to instances. This involves setting up network plugins, creating networks, subnets, and routers, and configuring security groups and floating IPs.
+
+Step 9: Configure the Block Storage Service (Cinder)
+Configure the Block Storage service (Cinder) to provide persistent storage to instances. This includes setting up storage backends, configuring Cinder services, and creating volumes and volume types.
+
+Step 10: Configure the Dashboard (Horizon) (Optional)
+Optionally, configure the Horizon dashboard, which provides a graphical user interface for managing your OpenStack cloud. This involves setting up the dashboard, configuring authentication, and customizing the interface if desired.
+
+Step 11: Test and Verify
+After completing the configuration of each OpenStack component, test the functionality to ensure that everything is working as expected. Create instances, assign floating IPs, attach volumes, and test network connectivity.
+
+Step 12: Secure and Monitor
+Implement security best practices to secure your private cloud environment. Set up monitoring tools to track the health and performance of your OpenStack infrastructure.
