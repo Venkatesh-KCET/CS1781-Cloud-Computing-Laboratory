@@ -1,0 +1,69 @@
+AIM
+To Implement OpenStack Nova - Compute and Image services -Glance
+
+PROCEDURAL STEPS:
+
+
+Prepare the Environment:
+Step 1: Set up a physical or virtual machine to serve as the compute node.
+Install a supported operating system (typically a Linux distribution).
+Ensure the machine meets the minimum requirements for running OpenStack Nova- Compute.
+Step 2: Install and Configure the Compute Node:
+Step 3: Update the system packages and repositories.
+Step 4: Install the necessary dependencies, such as Python and other required packages.
+Step 5: Install and configure the hypervisor software you plan to use (e.g., KVM, VMware).
+Step 6: Install the Nova-Compute service and its dependencies using the package manager (e.g., apt, yum).
+Step 7: Configure the Nova-Compute service by editing the configuration file (/etc/nova/nova.conf). Set appropriate values for options like authentication, messaging. networking, and hypervisor-related settings.
+Step 8: Optionally, configure additional features like live migration, GPU passthrough, etc., as per your requirements.
+
+Configure Networking:
+Step 1: Ensure the compute node has network connectivity to the OpenStack controller node and other services.
+Step 2: Configure the network settings in the Nova-Compute configuration file (/etc/nova/nova.conf). Specify the appropriate network provider, the URL of the message queue service, authentication credentials, etc.
+Step 3: Enable and Start Nova-Oompute Service:
+Step 4: Enable the Nova-Compute service to start automatically at boot time.
+Step 5: Start the Nova-Compute service using the appropriate service manager for your operating system (c.g., systemetl, service)
+
+Verify Compute Node Registration:
+Step 1: On the OpenStack controller node, use the OpenStack command-line client or API to verify if the compute node is registered and recognized by the OpenStack environment.
+Step 2: Validate the connectivity between the controller node and the compute node.
+Step 3: Confirm that the hypervisor and other services on the compute node are running without errors.
+
+Test Instance Launch:
+Step 1: Use the OpenStack dashboard (Horizon) or command-line client to launch a test instance on the compute node.
+Step 2: Monitor the instance creation process, ensuring that it is scheduled to run on the compute node.
+Step 3: Verify that the instance becomes active and is accessible over the network.
+
+By following these steps, you should be able to implement and configure OpenStack Nova-Compute successfully. Remember that this is a simplified overview, and you may need to consult the OpenStack documentation for more detailed information and troubleshooting guidance specific to your deployment scenario
+
+To implement OpenStack Glance (Image Service), you need to follow these step-by-step procedures:
+
+Set up the environment:
+
+Install and configure the database:
+Step 1: Install and configure the database server (eg, MySQL, MariaDB).
+Step 2: Create a database and database user for Nova and Glance services
+
+Install and configure message queue service:
+Step 1: Install RabbitMQ, which is the recommended message queue service for OpenStack
+Step 2: Configure RabbitMQ to enable communication between OpenStack services.
+
+Install and configure Identity service (Keystone):
+Step 1: Install Keystone and configure the database and RabbitMQ options in the Keystone configuration file.
+Step 2: Configure the admin token and endpoint URLs.
+
+Install and configure Compute service (Nova):
+Step 1: Install Nova Compute and its dependencies.
+Step 2: Configure the database and RabbitMQ options in the Nova configuration file.
+Step 3: Configure authentication and authorization settings in the Nova configuration file.
+Step 4: Configure the placement service (used for resource tracking) in the Nova configuration file.
+Step 5: Start and enable the Nova Compute service.
+
+Install and configure Image service (Glance):
+Step 1: Install Glance and its dependencies.
+Step 2: Configure the database and RabbitMQ options in the Glance configuration file.
+Step 3: Configure the image storage backend (e.g., local file system, Swift, Ceph) in the Glance configuration file.
+Step 4: Start and enable the Glance API and Glance Registry services.
+Step 5: Verify the installation:
+Step 6: Use the OpenStack command-line client (e.g., openstack) or API to verify that Nova and Glance services are running correctly.
+Step 7: Test creating and managing instances using the Nova Compute service.
+Step 8: Test uploading and retrieving images using the Glance Image service.
