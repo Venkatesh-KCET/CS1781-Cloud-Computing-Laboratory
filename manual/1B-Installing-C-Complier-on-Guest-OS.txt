@@ -1,0 +1,10 @@
+AIM:
+To install C Compiler in Guest OS 'Ubuntu'.
+
+Procedural Steps:
+1. To download package information from all configured sources -> $ sudo apt-get update
+2. To install C Compiler on Ubuntu -> $ sudo apt-get install gcc 
+3. To install C++ Compiler on Ubuntu -> $ sudo apt-get install g++
+4. Create a file to write C program -> $ sudo getit <<filename>>.c
+5. To Compile C program -> $ gcc <<filename>>.c
+6. To run C program -> $ ./a.out
