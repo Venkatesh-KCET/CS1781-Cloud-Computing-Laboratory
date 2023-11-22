@@ -1,0 +1,29 @@
+AIM:
+To Create instances and volume attachment in AWS
+
+Procedural Steps:
+1. To create instance and attach volume in AWS, you can follow these steps:
+2. Sign in to the AWS Management Console
+3. Open the EC2 service by searching for "EC2" in the AWS service search bar and selecting it.
+4. In the EC2 Dashboard, click on "Instance" in the left navigation panel.
+5. Click on the "Launch Instance" button to start the instance creation wizard.
+6. Choose an Amazon Machine Image (AMI) that suits your requirements. This is the base operating system for your instance.
+7. Select an instance type based on the resources and performance you need.
+8. configure the instance details such as the number of instance, network setting, security groups, and IAM roles. Customize these settings according to your specific needs.
+9. Add storage by specifing the size and type of the root volume or by adding additional volumes as needed. you can also configure encryption and other settings for the volumes.
+10. configure security groups to control in bound and outbound traffic to your instance.
+11. Review the instance detais and configuration, and make any necessary changes.
+12. Finally, click on the "Launch" button. You will be promptedto select or create a key pair to securly connect to your instance.
+13. Once the instance is launched, you can find it listed in the EC2 Dashboard under "Instances".
+14. To attach a volume to yoyr instance:
+15. In the EC2 Dashboard, click on "Volumes" in the left navigation pane.
+16. Click on the "Create Volumes" button to start the volume creation wizard.
+17. Select the desired volume type, size, and availability zone.
+18. Click on the "Create" button to create the volume.
+19. Once the volume is created, select it from the Volumes list.
+20. Click on the "Actions" button and choose "Attach Volume."
+21. In the Attach Volume dialog box, select the instance to which you want to attach the volume.
+22. Specify the device name (e.g., /dev/sdf) for the attachment.
+23. Click on the "Attach" button to attach the volume to the instance.
+24. The volume will now appear as "in-use" in the Volumes list, indicating a successful attachment.
+25. You have now created an instance and attached a volume in AWS.
